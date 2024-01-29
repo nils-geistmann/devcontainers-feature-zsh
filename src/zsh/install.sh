@@ -22,8 +22,16 @@ else
   USER_LOCATION="/home/$_REMOTE_USER"
 fi
 
+export ZSH="$USER_LOCATION/.oh-my-zsh"
+echo "check if OhMyZsh is installed at $ZSH"
 # ensure oh-my-zsh installed
-if [ "$USEOHMYZSH" == "true" ] && ! [ -d "$USER_LOCATION"/.oh-my-zsh ]; then
+if ! [ -d "$ZSH" ]; then
+  echo "OhMyZsh was not found - starting installation"
   check_and_install wget git
   sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 fi
+
+ZSH_RC_FILE="$USER_LOCATION/.zshrc"
+
+# set the theme
+sed -i -e "s/^ZSH_THEME=.*$/ZSH_THEME=\"$THEME\"/" "$ZSH_RC_FILE"

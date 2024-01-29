@@ -2,8 +2,15 @@
   "using_non_root_remote_user": {
     "image": "mcr.microsoft.com/devcontainers/javascript-node:bullseye",
     "features": {
+      "zsh": {}
+    },
+    "remoteUser": "node"
+  },
+  "using_theme_agnoster": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:bullseye",
+    "features": {
       "zsh": {
-        "useOhMyZsh": "true"
+        "theme": "agnoster"
       }
     },
     "remoteUser": "node"

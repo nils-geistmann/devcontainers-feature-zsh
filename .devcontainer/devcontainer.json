@@ -28,7 +28,9 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    // "./zsh": {} // use this to test the feature locally while working inside a devcontainer - don't forget to copy the contents of src to .devcontainer
+    "./zsh": {
+      "theme": "agnoster"
+    } // use this to test the feature locally while working inside a devcontainer - don't forget to copy the contents of src to .devcontainer
   },
   "remoteUser": "node",
   "updateContentCommand": "npm install -g @devcontainers/cli"
