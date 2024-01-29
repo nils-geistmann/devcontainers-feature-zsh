@@ -21,6 +21,8 @@
         "editorconfig.editorconfig",
         "pkief.material-icon-theme",
         "mads-hartmann.bash-ide-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "github.vscode-github-actions",
         "timonwong.shellcheck",
         "foxundermoon.shell-format"
       ]

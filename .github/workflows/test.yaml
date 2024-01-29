@@ -13,8 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - zsh
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -34,8 +33,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - zsh
     steps:
       - uses: actions/checkout@v3
 
