@@ -1,0 +1,29 @@
+{
+  "name": "zsh",
+  "id": "zsh",
+  "version": "0.0.1",
+  "description": "A feature to install and configure zsh with OhMyZsh",
+  "options": {
+    "theme": {
+      "description": "The theme to be activated in .zshrc",
+      "type": "string",
+      "default": "robbyrussell",
+      "proposals": [
+        "robbyrussell",
+        "agnoster"
+      ]
+    },
+    "plugins": {
+      "description": "A space separated list of plugins to activate",
+      "type": "string",
+      "default": "git",
+      "proposals": [
+        "git docker",
+        "rails git textmate ruby lighthouse"
+      ]
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
