@@ -1,15 +1,13 @@
 
-# Hello, World! (hello)
+# zsh (zsh)
 
-A hello world feature
+A feature to install and configure zsh with OhMyZsh
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
-    }
+    "ghcr.io/nils-geistmann/devcontainers-feature-zsh/zsh:0": {}
 }
 ```
 
@@ -17,10 +15,11 @@ A hello world feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| theme | The theme to be activated in .zshrc | string | robbyrussell |
+| plugins | A space separated list of plugins to activate | string | git |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/nils-geistmann/devcontainers-feature-zsh/blob/main/src/zsh/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
