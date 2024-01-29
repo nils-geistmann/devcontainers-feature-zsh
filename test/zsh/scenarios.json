@@ -7,12 +7,19 @@
     "remoteUser": "node"
   },
   "using_theme_agnoster": {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:bullseye",
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
     "features": {
       "zsh": {
         "theme": "agnoster"
       }
-    },
-    "remoteUser": "node"
+    }
+  },
+  "configuring_plugins_git_and_docker": {
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+      "zsh": {
+        "plugins": "git docker"
+      }
+    }
   }
 }

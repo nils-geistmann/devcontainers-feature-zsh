@@ -10,4 +10,6 @@ check "default shell should be zsh" assert_default_shell_is_zsh
 
 check "configured theme should be robbyrussell" assert_configured_theme_is "robbyrussell"
 
+check "plugin git should be configured" assert_configured_plugins "git"
+
 reportResults

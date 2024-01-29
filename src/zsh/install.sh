@@ -35,3 +35,6 @@ ZSH_RC_FILE="$USER_LOCATION/.zshrc"
 
 # set the theme
 sed -i -e "s/^ZSH_THEME=.*$/ZSH_THEME=\"$THEME\"/" "$ZSH_RC_FILE"
+
+# configure the plugins
+sed -i -e "s/^plugins=\\(.*\\)$/plugins=($PLUGINS)/" "$ZSH_RC_FILE"

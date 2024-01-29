@@ -22,8 +22,14 @@ assert_default_shell_is_zsh() {
 
 assert_configured_theme_is() {
   theme=$1
-  echo "$theme"
   if ! grep -E -q "^ZSH_THEME=\"$theme\"" ~/.zshrc; then
+    exit 1
+  fi
+}
+
+assert_configured_plugins() {
+  plugins=$1
+  if ! grep -E -q "^plugins=\\($plugins\\)" ~/.zshrc; then
     exit 1
   fi
 }
