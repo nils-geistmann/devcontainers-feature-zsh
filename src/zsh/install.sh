@@ -33,8 +33,12 @@ fi
 
 ZSH_RC_FILE="$USER_LOCATION/.zshrc"
 
+if ! [ -f "$ZSH_RC_FILE" ]; then
+  touch "$ZSH_RC_FILE"
+fi
+
 # set the theme
-sed -i -e "s/^ZSH_THEME=.*$/ZSH_THEME=\"$THEME\"/" "$ZSH_RC_FILE"
+upsert_config_option "^ZSH_THEME=.*$" "ZSH_THEME=\"$THEME\"" "$ZSH_RC_FILE"
 
 # configure the plugins
-sed -i -e "s/^plugins=\\(.*\\)$/plugins=($PLUGINS)/" "$ZSH_RC_FILE"
+upsert_config_option "^plugins=\\(.*\\)$" "plugins=($PLUGINS)" "$ZSH_RC_FILE"

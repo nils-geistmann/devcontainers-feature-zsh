@@ -21,5 +21,14 @@
         "plugins": "git docker"
       }
     }
-  }
+  },
+  "create_zshrc_file_if_missing": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "zsh": {
+        "theme": "avit",
+        "plugins": "git docker"
+      }
+    }
+  } 
 }
