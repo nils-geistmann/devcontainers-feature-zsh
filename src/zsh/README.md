@@ -7,7 +7,7 @@ A feature to install and configure zsh with OhMyZsh
 
 ```json
 "features": {
-    "ghcr.io/nils-geistmann/devcontainers-feature-zsh/zsh:0": {}
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {}
 }
 ```
 
@@ -22,4 +22,4 @@ A feature to install and configure zsh with OhMyZsh
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/nils-geistmann/devcontainers-feature-zsh/blob/main/src/zsh/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/nils-geistmann/devcontainers-features/blob/main/src/zsh/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
