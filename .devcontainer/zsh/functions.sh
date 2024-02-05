@@ -13,3 +13,11 @@ check_and_install() {
     fi
   done
 }
+
+upsert_config_option() {
+  if grep -E -q "$1" "$3"; then
+    sed -i -e "s/$1/$2/" "$3"
+  else
+    echo "$2" >>"$3"
+  fi
+}

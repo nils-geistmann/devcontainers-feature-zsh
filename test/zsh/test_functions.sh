@@ -33,3 +33,9 @@ assert_configured_plugins() {
     exit 1
   fi
 }
+
+assert_zshrc_exists() {
+  if ! [ -f ~/.zshrc ]; then
+    exit 1
+  fi
+}
