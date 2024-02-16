@@ -16,7 +16,7 @@ fi
 # set zsh as default shell for the remote user
 chsh -s "$(which zsh)" "$_REMOTE_USER"
 
-if [ "$_REMOTE_USER" = "root" ]; then
+if [ "$_REMOTE_USER" == "root" ]; then
   USER_LOCATION="/root"
 else
   USER_LOCATION="/home/$_REMOTE_USER"
