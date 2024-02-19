@@ -1,10 +1,11 @@
 {
   "using_non_root_remote_user": {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:bullseye",
+    "image": "debian:bookworm-slim",
     "features": {
+      "ghcr.io/nils-geistmann/devcontainers-features/create-remote-user:latest": {},
       "zsh": {}
     },
-    "remoteUser": "node"
+    "remoteUser": "remote"
   },
   "using_theme_agnoster": {
     "image": "mcr.microsoft.com/devcontainers/base:bullseye",
@@ -30,5 +31,5 @@
         "plugins": "git docker"
       }
     }
-  } 
+  }
 }

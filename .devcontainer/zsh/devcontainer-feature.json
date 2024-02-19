@@ -1,7 +1,7 @@
 {
   "name": "zsh",
   "id": "zsh",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A feature to install and configure zsh with OhMyZsh",
   "options": {
     "theme": {
@@ -22,5 +22,8 @@
         "rails git textmate ruby lighthouse"
       ]
     }
-  }
+  },
+  "installsAfter": [
+    "ghcr.io/nils-geistmann/devcontainers-features/create-remote-user"
+  ]
 }
