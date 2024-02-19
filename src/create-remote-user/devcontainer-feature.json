@@ -1,0 +1,23 @@
+{
+  "name": "Create Remote User",
+  "id": "create-remote-user",
+  "version": "0.0.1",
+  "description": "A to assert the configured remote user exists in the container",
+  "options": {
+    "create": {
+      "description": "Create the user if it doesn't exist",
+      "type": "boolean",
+      "default": true
+    },
+    "addToSudo": {
+      "description": "If the user is newly created, add it to group sudo (if it exists)",
+      "type": "boolean",
+      "default": true
+    },
+    "installSudo": {
+      "description": "Install sudo if it is not yet installed",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

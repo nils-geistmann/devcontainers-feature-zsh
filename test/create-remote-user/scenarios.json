@@ -1,0 +1,19 @@
+{
+  "default_configuration": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "create-remote-user": {}
+    },
+    "remoteUser": "remote"
+  },
+  "do_not_add_to_sudo": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "create-remote-user": {
+        "addToSudo": false,
+        "installSudo": false
+      }
+    },
+    "remoteUser": "remote"
+  }
+}
