@@ -8,6 +8,7 @@ assert_zsh_installed() {
 
 assert_oh_my_zsh_installed() {
   if [ -z "$ZSH" ]; then
+    echo "Variable ZSH is not set"
     exit 1
   fi
 

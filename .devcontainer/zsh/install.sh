@@ -16,19 +16,15 @@ fi
 # set zsh as default shell for the remote user
 chsh -s "$(which zsh)" "$_REMOTE_USER"
 
-if [ "$_REMOTE_USER" == "root" ]; then
+check_and_install curl git
+
+if [ "$_REMOTE_USER" = "root" ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
   USER_LOCATION="/root"
 else
+  #install OhMyZsh as the $_REMOTE_USER
+  su - "$_REMOTE_USER" -c "sh -c $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
   USER_LOCATION="/home/$_REMOTE_USER"
-fi
-
-export ZSH="$USER_LOCATION/.oh-my-zsh"
-echo "check if OhMyZsh is installed at $ZSH"
-# ensure oh-my-zsh installed
-if ! [ -d "$ZSH" ]; then
-  echo "OhMyZsh was not found - starting installation"
-  check_and_install wget git
-  sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 fi
 
 ZSH_RC_FILE="$USER_LOCATION/.zshrc"

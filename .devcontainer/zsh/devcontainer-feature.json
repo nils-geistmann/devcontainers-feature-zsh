@@ -22,8 +22,5 @@
         "rails git textmate ruby lighthouse"
       ]
     }
-  },
-  "installsAfter": [
-    "ghcr.io/devcontainers/features/common-utils"
-  ]
+  }
 }
