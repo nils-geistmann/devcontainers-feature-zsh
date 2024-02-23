@@ -13,6 +13,7 @@ fi
 if [ "$CREATE" = "true" ] && ! id "$_REMOTE_USER"; then
   echo "User does not exist - starting creation"
   useradd -g users -m "$_REMOTE_USER"
+  echo "$_REMOTE_USER:$_REMOTE_USER" | chpasswd
 elif ! id "$_REMOTE_USER"; then
   echo "User does not exist - exiting feature installation."
   exit 0

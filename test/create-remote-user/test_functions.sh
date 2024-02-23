@@ -29,3 +29,10 @@ assert_command_is_not_available() {
     exit 1
   fi
 }
+
+assert_password_is_set() {
+  id
+  if ! echo "$2" | sudo -S -l; then
+    exit 1
+  fi
+}

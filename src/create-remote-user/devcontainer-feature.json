@@ -1,7 +1,7 @@
 {
   "name": "Create Remote User",
   "id": "create-remote-user",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A to assert the configured remote user exists in the container",
   "options": {
     "create": {
