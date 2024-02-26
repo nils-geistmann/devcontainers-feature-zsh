@@ -1,7 +1,7 @@
 {
   "name": "zsh",
   "id": "zsh",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A feature to install and configure zsh with OhMyZsh",
   "options": {
     "theme": {
