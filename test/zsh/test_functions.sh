@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
 
-assert_zsh_installed() {
-  if ! which zsh; then
+assert_command_available() {
+  if ! which "$1"; then
     exit 1
   fi
+}
+
+assert_zsh_installed() {
+  assert_command_available zsh
+}
+
+assert_locales_installed() {
+  assert_command_available locale-gen
 }
 
 assert_oh_my_zsh_installed() {
@@ -37,6 +45,12 @@ assert_configured_plugins() {
 
 assert_zshrc_exists() {
   if ! [ -f ~/.zshrc ]; then
+    exit 1
+  fi
+}
+
+assert_locale_available() {
+  if ! locale -a | grep "$1"; then
     exit 1
   fi
 }

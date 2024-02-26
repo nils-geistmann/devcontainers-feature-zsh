@@ -12,4 +12,7 @@ check "configured theme should be robbyrussell" assert_configured_theme_is "robb
 
 check "plugin git should be configured" assert_configured_plugins "git"
 
+check "locales should be installed" assert_locales_installed
+check "locale en_US.utf8 should be available" assert_locale_available "en_US.utf8"
+
 reportResults

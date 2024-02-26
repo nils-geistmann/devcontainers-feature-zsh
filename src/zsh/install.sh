@@ -27,6 +27,13 @@ else
   USER_LOCATION="/home/$_REMOTE_USER"
 fi
 
+#install and set locales
+if [ "$SETLOCALE" = "true" ]; then
+  check_and_install locales
+  echo "$DESIREDLOCALE" >>/etc/locale.gen
+  locale-gen
+fi
+
 ZSH_RC_FILE="$USER_LOCATION/.zshrc"
 
 if ! [ -f "$ZSH_RC_FILE" ]; then
