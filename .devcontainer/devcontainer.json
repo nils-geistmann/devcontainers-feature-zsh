@@ -1,13 +1,8 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
   "customizations": {
     "vscode": {
       "settings": {
-        "files.autoSave": "onFocusChange",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-          "source.organizeImports": "always"
-        },
         "json.schemas": [
           {
             "fileMatch": [
@@ -18,22 +13,12 @@
         ]
       },
       "extensions": [
-        "editorconfig.editorconfig",
-        "pkief.material-icon-theme",
-        "mads-hartmann.bash-ide-vscode",
-        "streetsidesoftware.code-spell-checker",
-        "github.vscode-github-actions",
-        "timonwong.shellcheck",
-        "foxundermoon.shell-format"
+        "mads-hartmann.bash-ide-vscode"
       ]
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "./zsh": {
-      "theme": "avit",
-      "plugins": "git docker"
-    }
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "remoteUser": "node",
   "updateContentCommand": "npm install -g @devcontainers/cli"
