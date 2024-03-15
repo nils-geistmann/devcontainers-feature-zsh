@@ -20,6 +20,11 @@ A feature to install and configure zsh with OhMyZsh
 | setLocale | Install required locales package and set locale | boolean | true |
 | desiredLocale | The locale that should be set when 'setLocale' is true | string | en_US.UTF-8 UTF-8 |
 
+## OS Support
+
+This feature currently only supports Debian based containers (where APT is used as package manager).
+
+`bash` is required to run the install script.
 
 
 ---
