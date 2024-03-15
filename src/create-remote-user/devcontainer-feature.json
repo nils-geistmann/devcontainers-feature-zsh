@@ -3,6 +3,7 @@
   "id": "create-remote-user",
   "version": "0.0.2",
   "description": "A to assert the configured remote user exists in the container",
+  "licenseURL": "https://github.com/nils-geistmann/devcontainers-features/blob/main/LICENSE",
   "options": {
     "create": {
       "description": "Create the user if it doesn't exist",

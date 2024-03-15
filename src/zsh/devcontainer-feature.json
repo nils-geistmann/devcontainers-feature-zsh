@@ -3,6 +3,7 @@
   "id": "zsh",
   "version": "0.0.5",
   "description": "A feature to install and configure zsh with OhMyZsh",
+  "licenseURL": "https://github.com/nils-geistmann/devcontainers-features/blob/main/LICENSE",
   "options": {
     "theme": {
       "description": "The theme to be activated in .zshrc",
