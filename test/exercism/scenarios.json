@@ -1,0 +1,36 @@
+{
+  "default_configuration": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+      "exercism": {}
+    }
+  },
+  "remote_user_with_zsh": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "ghcr.io/nils-geistmann/devcontainers-features/create-remote-user:0": {},
+      "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+      "exercism": {}
+    },
+    "remoteUser": "exercism-zsh"
+  },
+  "with_bash_completions": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "ghcr.io/nils-geistmann/devcontainers-features/create-remote-user:0": {},
+      "exercism": {
+        "containerShell": "bash"
+      }
+    }
+  },
+  "no_completions": {
+    "image": "debian:bookworm-slim",
+    "features": {
+      "ghcr.io/nils-geistmann/devcontainers-features/create-remote-user:0": {},
+      "exercism": {
+        "installCompletions": false
+      }
+    }
+  }
+}

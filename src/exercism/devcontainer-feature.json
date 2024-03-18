@@ -1,0 +1,31 @@
+{
+    "name": "exercism",
+    "id": "exercism",
+    "version": "0.0.1",
+    "description": "A feature installing the Exercism CLI",
+    "licenseURL": "https://github.com/nils-geistmann/devcontainers-features/blob/main/LICENSE",
+    "options": {
+        "version": {
+          "type": "string",
+          "default": "3.3.0",
+          "description": "Version of the Exercism CLI"
+        },
+        "installCompletions": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether or not to install a shell completion script for the cli"
+        },
+        "containerShell": {
+            "type": "string",
+            "default": "zsh",
+            "proposals": [
+                "zsh",
+                "bash"
+            ],
+            "description": "Which shell to install the completions for - only `zsh` and `bash` are supported"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/nils-geistmann/devcontainers-features/zsh"
+    ]
+}

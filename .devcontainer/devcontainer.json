@@ -3,6 +3,7 @@
   "customizations": {
     "vscode": {
       "settings": {
+        "files.autoSave": "onFocusChange",
         "json.schemas": [
           {
             "fileMatch": [
@@ -13,12 +14,20 @@
         ]
       },
       "extensions": [
-        "mads-hartmann.bash-ide-vscode"
+        "mads-hartmann.bash-ide-vscode",
+        "foxundermoon.shell-format",
+        "timonwong.shellcheck",
+        "streetsidesoftware.code-spell-checker",
+        "editorconfig.editorconfig"
       ]
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "./zsh": {
+      "theme": "agnoster",
+      "plugins": "git docker"
+    }
   },
   "remoteUser": "node",
   "updateContentCommand": "npm install -g @devcontainers/cli"

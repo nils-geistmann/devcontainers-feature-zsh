@@ -9,3 +9,4 @@ This repo contains a few features for [devcontainers](https://containers.dev/).
 
 * [create-remote-user](./src/create-remote-user/README.md)
 * [zsh](./src/zsh/README.md)
+* [exercism](./src/exercism/README.md)
