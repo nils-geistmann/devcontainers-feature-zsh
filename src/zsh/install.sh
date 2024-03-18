@@ -45,3 +45,5 @@ upsert_config_option "^ZSH_THEME=.*$" "ZSH_THEME=\"$THEME\"" "$ZSH_RC_FILE"
 
 # configure the plugins
 upsert_config_option "^plugins=\\(.*\\)$" "plugins=($PLUGINS)" "$ZSH_RC_FILE"
+
+clean_package_cache

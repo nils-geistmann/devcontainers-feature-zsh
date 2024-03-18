@@ -1,7 +1,7 @@
 {
   "name": "zsh",
   "id": "zsh",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A feature to install and configure zsh with OhMyZsh",
   "licenseURL": "https://github.com/nils-geistmann/devcontainers-features/blob/main/LICENSE",
   "options": {

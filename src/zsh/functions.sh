@@ -14,6 +14,11 @@ check_and_install() {
   done
 }
 
+# Cleans APT's cache to keep devcontainer layers small
+clean_package_cache() {
+  apt-get clean
+}
+
 upsert_config_option() {
   if grep -E -q "$1" "$3"; then
     sed -i -e "s/$1/$2/" "$3"

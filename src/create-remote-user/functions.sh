@@ -13,3 +13,8 @@ check_and_install() {
     fi
   done
 }
+
+# Cleans APT's cache to keep devcontainer layers small
+clean_package_cache() {
+  apt-get clean
+}

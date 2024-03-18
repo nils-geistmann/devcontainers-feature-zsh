@@ -28,3 +28,5 @@ if [ "$INSTALLSUDO" = "true" ] && ! which sudo; then
   echo "sudo is not installed - starting installation"
   check_and_install sudo
 fi
+
+clean_package_cache
