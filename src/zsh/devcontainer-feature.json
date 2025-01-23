@@ -17,7 +17,7 @@
     "defaultUser": {
       "description": "The defaultUser to set in .zshrc",
       "type": "string",
-      "default": "vscode",
+      "default": "",
       "proposals": [
         "vscode",
         "root"
