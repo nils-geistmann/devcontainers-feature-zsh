@@ -36,6 +36,19 @@ assert_configured_theme_is() {
   fi
 }
 
+assert_configured_default_user_is() {
+  theme=$1
+  if ! grep -E -q "^DEFAULT_USER=\"$theme\"" ~/.zshrc; then
+    exit 1
+  fi
+}
+
+assert_configured_default_user_is_not_set() {
+  if grep -q "^DEFAULT_USER=" ~/.zshrc; then
+    exit 1
+  fi
+}
+
 assert_configured_plugins() {
   plugins=$1
   if ! grep -E -q "^plugins=\\($plugins\\)" ~/.zshrc; then

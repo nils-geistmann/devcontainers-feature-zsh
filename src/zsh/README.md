@@ -19,6 +19,7 @@ A feature to install and configure zsh with OhMyZsh
 | plugins | A space separated list of plugins to activate | string | git |
 | setLocale | Install required locales package and set locale | boolean | true |
 | desiredLocale | The locale that should be set when 'setLocale' is true | string | en_US.UTF-8 UTF-8 |
+| defaultUser | Sets the DEFAULT_USER property in .zshrc | string | not set |
 
 ## OS Support
 

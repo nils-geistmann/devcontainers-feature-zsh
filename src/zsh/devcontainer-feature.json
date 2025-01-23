@@ -14,6 +14,15 @@
         "agnoster"
       ]
     },
+    "defaultUser": {
+      "description": "The defaultUser to set in .zshrc",
+      "type": "string",
+      "default": "",
+      "proposals": [
+        "vscode",
+        "root"
+      ]
+    },
     "plugins": {
       "description": "A space separated list of plugins to activate",
       "type": "string",

@@ -15,6 +15,23 @@
       }
     }
   },
+  "using_theme_agnoster_with_default_user": {
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+      "zsh": {
+        "theme": "agnoster",
+        "defaultUser": "vscode"
+      }
+    }
+  },
+  "using_theme_agnoster_with_no_default_user": {
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+      "zsh": {
+        "theme": "agnoster"
+      }
+    }
+  },
   "configuring_plugins_git_and_docker": {
     "image": "mcr.microsoft.com/devcontainers/base:bullseye",
     "features": {
